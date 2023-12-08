@@ -15,7 +15,7 @@ spec:
   timeout: 3m0s
   wait: true
   patches:
-  - patch: "apiVersion: autoscaling/v2\nkind: HorizontalPodAutoscaler\nmetadata:\n  name: podinfo\nspec:\n  minReplicas: 3             "
+  - patch: "apiVersion: autoscaling/v2\nkind: HorizontalPodAutoscaler\nmetadata:\n  name: podinfo\nspec:\n  minReplicas: 4             "
     target:
       name: podinfo
       kind: HorizontalPodAutoscaler
